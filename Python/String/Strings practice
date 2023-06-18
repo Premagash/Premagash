@@ -1,0 +1,84 @@
+"""
+Write a function that takes a string 
+    as input and returns the reverse of that string.
+    """
+def reverse_string(input_string):
+    return input_string[::-1]
+
+print(reverse_string("Premagash"))    
+
+"""
+Write a function that counts the number of
+   vowels (a, e, i, o, u) in a given string.
+   """
+
+def vowel_counts(input_string):
+    vowels = "aeiou"
+    count = 0
+    for char in input_string:
+        if char.lower() in vowels:
+            count += 1
+    return count
+
+print(vowel_counts("Premagash"))    
+       
+
+"""
+Write a function that takes two strings as 
+input and checks if they are anagrams 
+(i.e., they have the same characters but in a 
+ different order). Return True if they are anagrams, 
+and False otherwise.
+"""
+
+def are_anagrams(str1, str2):
+    return sorted(str1) == sorted(str2)
+
+print(are_anagrams("listen" , "silent")) 
+
+
+"""
+Write a function that takes a sentence as input 
+and capitalizes the 
+first letter of each word in the sentence.
+"""
+
+def capitalize(input_string):
+    return input_string.title()
+
+print(capitalize("I am new to programming"))
+
+"""
+Write a function that takes a string as input and 
+checks if it is a palindrome 
+(i.e., reads the same forwards and backwards). 
+Return True if it is a palindrome, and False otherwise.
+"""
+
+
+def is_palindrome(input_string):
+    return input_string[::-1]
+
+print(is_palindrome("madam"))
+
+"""
+Write a function that takes a
+ string as input and counts the number of occurrences 
+ of a specific character in the string
+"""
+
+def count_occurances(input_string,target_char):
+    count = 0
+    for char in input_string:
+        if char == target_char:
+            count += 1
+    return count
+
+print(count_occurances("Premagash","e")) 
+
+# same string method
+
+name = "premagash"
+print(name.count("e"))    
+
+
