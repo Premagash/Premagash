@@ -73,12 +73,31 @@ def count_occurances(input_string,target_char):
         if char == target_char:
             count += 1
     return count
-
+(
 print(count_occurances("Premagash","e")) 
 
 # same string method
 
 name = "premagash"
 print(name.count("e"))    
+
+"""
+
+Write a function that takes a string as
+ input and checks if it is a valid email address. 
+ Return True if it is valid, and False otherwise.
+"""
+
+import re
+def is_valid_email(email):
+    pattern = r'[\w\.-]+@[\w\.-]+\.\w+$'
+    return re.match(pattern,email) is not None
+    
+
+
+
+
+
+
 
 
