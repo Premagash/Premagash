@@ -1,0 +1,85 @@
+name = "Premagash"
+print(name)
+
+# len()
+
+print(len(name))
+
+
+# lower()
+
+print(name.lower())
+
+
+# upper()
+
+print(name.upper())
+
+# title()
+
+print(name.title())
+
+
+# strip(),rstrip(),lstrip()
+
+name = "  Premagash  "
+print(name.strip())
+print(name.rstrip())
+print(name.lstrip())
+
+
+# endswith() 
+
+print(name.endswith("h"))
+
+
+# startwith()
+
+name = "Premagash"
+print(name.startswith("P"))
+
+# string.split(separator, maxsplit)
+
+var = "python, is a programming language"
+print(var.split(", "))
+
+var = "helloworld"
+print(var.split())
+
+var = "1, 2, 3, 4"
+print(var.split(","))
+
+
+# f- string
+
+name = "Premagash"
+sentence = "is learning python programming"
+print(f"{name} {sentence}")
+
+
+# string.counnt()
+
+print(name.count("e"))
+
+
+# string.join()
+
+name = " prem","agash"
+joined_strings= "".join(name)
+print(joined_strings)
+
+numbers = ("1","2","3","4","5")
+equation = "+".join(numbers)
+print(equation)
+
+
+# find()
+
+name = "premagash"
+print(name.find("p"))
+
+# replace()
+
+print(name.replace("p","P"))
+
+
